@@ -78,10 +78,10 @@ def evaluate_durations(tasks_dict: dict) -> list:
         total_seconds = int((end - start).total_seconds())
         duration_minutes, duration_seconds = divmod(total_seconds, 60)
 
-        if duration_minutes > 10:
+        if duration_minutes >= 10:
             output.append(f"ERROR: PID {pid} ({description}) took {duration_minutes} minutes and {duration_seconds} seconds")
             get_logger().error(f"{pid} ({description}) took {duration_minutes} minutes and {duration_seconds} seconds")
-        elif duration_minutes > 5:
+        elif duration_minutes >= 5:
             output.append(f"WARNING: PID {pid} ({description}) took {duration_minutes} minutes and {duration_seconds} seconds")
             get_logger().warning(f"{pid} ({description}) took {duration_minutes} minutes and {duration_seconds} seconds")
     return output, incomplete_tasks
