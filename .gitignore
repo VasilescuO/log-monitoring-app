@@ -1,3 +1,4 @@
 .idea/
 uv.lock
 logs/app-logs.log
+log_parser/__pycache__/
