@@ -4,7 +4,7 @@ import logging
 
 def get_logger():
     """Logging function to write logs to a file."""
-    log_dir = '/logs'
+    log_dir = 'logs'
     os.makedirs(log_dir, exist_ok=True)
     log_file = os.path.join(log_dir, 'app-logs.log')
 
