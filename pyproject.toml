@@ -1,0 +1,8 @@
+[project]
+name = "log-monitoring-app"
+version = "0.1.0"
+description = "Small application for monitoring logs and sending alerts"
+requires-python = ">=3.13"
+dependencies = [
+    "pytest",
+]
