@@ -11,9 +11,9 @@ It reports **warnings** and **errors** when execution thresholds are exceeded.
 - Matches `START` and `END` events for each PID.
 - Calculates job durations.
 - Classifies jobs as:
-- ✅ OK (≤ 5 minutes)
 - ⚠️ WARNING (> 5 minutes)
 - ❌ ERROR (> 10 minutes)
+- Incomplete jobs (missing `START` or `END`).
 - Reports incomplete jobs (missing START or END).
 - Clear, readable output in terminal or logs.
 
